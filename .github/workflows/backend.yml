@@ -26,3 +26,6 @@ jobs:
         
     - name: Build with Maven
       run: mvn clean package package
+      
+    - name: test docker
+      run: docker ps

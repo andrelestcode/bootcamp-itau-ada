@@ -29,3 +29,6 @@ jobs:
       
     - name: test docker
       run: docker ps
+      
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag backend:latest
